@@ -220,7 +220,7 @@ async function submitScore() {
   try {
     setMsg('در حال ارسال به بلاکچین...');
     const scoreHex = BigInt(lastScore).toString(16).padStart(64, '0');
-    const data = '0x4050a1d3' + scoreHex;
+    const data = '0xaff0b297' + scoreHex;
     const tx = await window.ethereum.request({
       method: 'eth_sendTransaction',
       params: [{
